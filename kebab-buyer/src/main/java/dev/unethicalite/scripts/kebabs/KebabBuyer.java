@@ -20,7 +20,7 @@ public class KebabBuyer extends BotScript {
 
     /**
      * Gets executed whenever a script starts.
-     * Can be used to for example initalize script settings, or perform tasks before starting the loop logic.
+     * Can be used to for example initialize script settings, or perform tasks before starting the loop logic.
      * @param args any script arguments passed to the script, separated by spaces.
      */
     @Override

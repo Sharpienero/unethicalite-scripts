@@ -25,7 +25,8 @@ allprojects {
     }
 
     dependencies {
-        compileOnly(files(System.getProperty("user.home") + "/.hoot/hoot-4.17.1-api.jar"))
+        compileOnly(group = "com.openosrs", name = "runelite-api", version = "4.17.1")
+        compileOnly(group = "com.openosrs", name = "runelite-client", version = "4.17.1")
     }
 
     configure<JavaPluginConvention> {
