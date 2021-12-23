@@ -11,7 +11,7 @@ plugins {
 
 version = "0.0.1"
 
-allprojects {
+subprojects {
     group = "dev.unethical"
 
     apply<JavaPlugin>()
