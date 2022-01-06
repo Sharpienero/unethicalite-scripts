@@ -18,6 +18,7 @@ allprojects {
     apply<JavaPlugin>()
     apply(plugin = "java-library")
     apply(plugin = "kotlin")
+    apply(plugin = "com.github.johnrengelman.shadow")
 
     repositories {
         mavenCentral()
