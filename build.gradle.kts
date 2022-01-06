@@ -25,8 +25,8 @@ subprojects {
     }
 
     dependencies {
-        compileOnly(group = "com.openosrs", name = "runelite-api", version = "4.17.1")
-        compileOnly(group = "com.openosrs", name = "runelite-client", version = "4.17.1")
+        compileOnly(group = "com.openosrs", name = "runelite-api", version = "4.18.0")
+        compileOnly(group = "com.openosrs", name = "runelite-client", version = "4.18.0")
     }
 
     configure<JavaPluginConvention> {
