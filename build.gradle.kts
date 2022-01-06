@@ -7,11 +7,12 @@ buildscript {
 plugins {
     `java-library`
     kotlin("jvm") version "1.5.31"
+    id("com.github.johnrengelman.shadow") version "6.1.0"
 }
 
 version = "0.0.1"
 
-subprojects {
+allprojects {
     group = "dev.unethical"
 
     apply<JavaPlugin>()
@@ -25,12 +26,12 @@ subprojects {
     }
 
     dependencies {
-        compileOnly(group = "com.openosrs", name = "runelite-api", version = "4.18.0")
-        compileOnly(group = "com.openosrs", name = "runelite-client", version = "4.18.0")
+        api(group = "com.openosrs", name = "runelite-api", version = "4.18.0")
+        api(group = "com.openosrs", name = "runelite-client", version = "4.18.0")
     }
 
     configure<JavaPluginConvention> {
-        sourceCompatibility = JavaVersion.VERSION_16
+        sourceCompatibility = JavaVersion.VERSION_11
     }
 
     tasks {
@@ -38,6 +39,8 @@ subprojects {
             doFirst {
                 clean
             }
+
+            finalizedBy("shadowJar")
         }
 
         withType<Jar> {
