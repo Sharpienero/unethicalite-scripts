@@ -24,6 +24,9 @@ allprojects {
         mavenCentral()
         jcenter()
         mavenLocal()
+        maven {
+            url = uri("https://repo.runelite.net")
+        }
     }
 
     dependencies {
