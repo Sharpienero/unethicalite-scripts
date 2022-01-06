@@ -44,7 +44,7 @@ subprojects {
             doLast {
                 copy {
                     from("build/libs")
-                    into(System.getProperty("user.home") + "/.hoot/scripts/")
+                    into(System.getProperty("user.home") + "/.openosrs/scripts/")
                 }
             }
         }
