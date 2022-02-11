@@ -30,8 +30,8 @@ allprojects {
     }
 
     dependencies {
-        api(group = "com.openosrs", name = "runelite-api", version = "4.18.0")
-        api(group = "com.openosrs", name = "runelite-client", version = "4.18.0")
+        api(group = "com.openosrs", name = "runelite-api", version = "4.20.0")
+        api(group = "com.openosrs", name = "runelite-client", version = "4.20.0")
     }
 
     configure<JavaPluginConvention> {
